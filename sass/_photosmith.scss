@@ -1,0 +1,22 @@
+.photosmith{
+    .set{float:left;}
+    .number{float:right;}
+    .photo{position:relative;}
+    .photo img{width:397px;}
+    .photo .mouseover{display:none;}
+    .photo .nextprev{position:absolute;top:30%;opacity:.7;cursor:pointer;border-style: solid;height: 0;width: 0;}
+    .photo .next{
+        right:0;
+        border-color: transparent transparent transparent #7BD2F7;
+        border-width: 25px 0 25px 42px;
+    }
+    .photo .next:hover{border-color: transparent transparent transparent white;opacity:1}
+    .photo .prev{
+        left:0;
+        border-color: transparent #7BD2F7 transparent transparent;
+        border-width: 25px 42px 25px 0;
+    }
+    .photo .prev:hover{border-color: transparent white transparent transparent;opacity:1}
+    .photo .next.disabled, .photo .next.disabled:hover{border-color: transparent transparent transparent #bbb;opacity:.3;cursor:auto;}
+    .photo .prev.disabled, .photo .prev.disabled:hover{border-color: transparent #bbb transparent transparent;opacity:.3;cursor:auto;}
+}

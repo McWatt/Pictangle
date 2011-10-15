@@ -1,0 +1,236 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../../../../../Ruby192-180/lib/ruby/gems/1.9.1/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, footer, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  padding: 2em;
+  font-family: arial;
+  font-size: 12px;
+}
+
+/* line 18, ../sass/screen.scss */
+header, footer {
+  margin: 1em 0;
+  padding: 1em;
+  background-color: #eee;
+}
+
+/* line 24, ../sass/screen.scss */
+section {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 1em;
+}
+/* line 27, ../sass/screen.scss */
+section h2 {
+  margin: 1em 0;
+  font-size: 16px;
+}
+
+/* line 35, ../sass/screen.scss */
+.photosmith .set {
+  float: left;
+  width: 85%;
+}
+/* line 36, ../sass/screen.scss */
+.photosmith .number {
+  float: right;
+  width: 15%;
+  text-align: right;
+}
+/* line 37, ../sass/screen.scss */
+.photosmith .photo {
+  position: relative;
+}
+/* line 38, ../sass/screen.scss */
+.photosmith .photo img {
+  width: 100%;
+}
+/* line 39, ../sass/screen.scss */
+.photosmith .photo .mouseover {
+  display: none;
+}
+/* line 40, ../sass/screen.scss */
+.photosmith .photo .nextprev {
+  position: absolute;
+  top: 108px;
+  opacity: .6;
+  cursor: pointer;
+  border-style: solid;
+  height: 0;
+  width: 0;
+}
+/* line 41, ../sass/screen.scss */
+.photosmith .photo .next {
+  right: 0;
+  border-color: transparent transparent transparent #7BD2F7;
+  border-width: 25px 0 25px 42px;
+}
+/* line 46, ../sass/screen.scss */
+.photosmith .photo .next:hover {
+  border-color: transparent transparent transparent white;
+  opacity: 1;
+}
+/* line 47, ../sass/screen.scss */
+.photosmith .photo .prev {
+  left: 0;
+  border-color: transparent #7BD2F7 transparent transparent;
+  border-width: 25px 42px 25px 0;
+}
+/* line 52, ../sass/screen.scss */
+.photosmith .photo .prev:hover {
+  border-color: transparent white transparent transparent;
+  opacity: 1;
+}
+/* line 53, ../sass/screen.scss */
+.photosmith .photo .next.disabled, .photosmith .photo .next.disabled:hover {
+  border-color: transparent transparent transparent #bbb;
+  opacity: .3;
+  cursor: auto;
+}
+/* line 54, ../sass/screen.scss */
+.photosmith .photo .prev.disabled, .photosmith .photo .prev.disabled:hover {
+  border-color: transparent #bbb transparent transparent;
+  opacity: .3;
+  cursor: auto;
+}
+/* line 55, ../sass/screen.scss */
+.photosmith .caption {
+  padding: 12px;
+  background-color: #ddd;
+  text-overflow: ellipsis;
+}
+/* line 56, ../sass/screen.scss */
+.photosmith .info {
+  padding: 12px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+/* line 57, ../sass/screen.scss */
+.photosmith.small .info {
+  padding: 2px;
+}
+/* line 58, ../sass/screen.scss */
+.photosmith.small .set {
+  display: block;
+  padding: 2px;
+  float: none;
+  width: auto;
+  text-align: center;
+}
+/* line 59, ../sass/screen.scss */
+.photosmith.small .number {
+  display: block;
+  padding: 2px;
+  float: none;
+  font-size: 11px;
+  width: auto;
+  text-align: center;
+}
+/* line 60, ../sass/screen.scss */
+.photosmith.small .caption {
+  padding: 2px;
+  font-size: 11px;
+}
+/* line 61, ../sass/screen.scss */
+.photosmith.small .photo .nextprev {
+  top: 24px;
+}
+/* line 62, ../sass/screen.scss */
+.photosmith.small .photo .next {
+  border-width: 12px 0 12px 21px;
+}
+/* line 63, ../sass/screen.scss */
+.photosmith.small .photo .prev {
+  border-width: 12px 21px 12px 0;
+}
+/* line 66, ../sass/screen.scss */
+.photosmith .photosmith-container {
+  position: relative;
+}
+/* line 67, ../sass/screen.scss */
+.photosmith #photosmith-debug {
+  position: absolute;
+  top: 0;
+  left: 110%;
+  width: 400px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+/* line 75, ../sass/screen.scss */
+.photosmith #photosmith-debug .value {
+  color: #333;
+  font-weight: bold;
+}
+/* line 76, ../sass/screen.scss */
+.photosmith #photosmith-debug .key {
+  color: #aaa;
+}

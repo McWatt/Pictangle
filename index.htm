@@ -1,0 +1,126 @@
+<!doctype html>
+<meta charset="utf-8"><!-- charset needs to be set in the first 512 bytes-->
+
+<!--[if lt IE 7]> <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]--> 
+<!--[if IE 7]> <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]--> 
+<!--[if IE 8]> <html class="ie ie8 lte9 lte8 no-js"> <![endif]--> 
+<!--[if IE 9]> <html class="ie ie9 lte9 no-js"> <![endif]--> 
+<!--[if gt IE 9]> <html class="ie no-js"> <![endif]--> 
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
+
+<head>
+    <title>Photosmith &#8211; A simple jQuery plugin.</title>
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="Author" content="#">
+    <meta name="Description" content="#">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if !IE 6]><!-->
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--<![endif]-->
+    <!--[if IE 6]>
+        <link rel="stylesheet" type="text/css" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css" media="screen" />
+    <![endif]-->
+
+    <script type="text/javascript" src="javascripts/library/modernizr-custom.js"></script>
+    
+</head>
+
+<body>
+
+<div id="container">
+<header>
+    <hgroup>
+        <h1>Photosmith</h1>
+        <h2>A simple jQuery plugin</h2>
+    </hgroup>
+</header>
+
+
+
+<section>
+    <h2>Photography</h2>
+    <div id="psPhotography" class="photosmith"></div>
+</section>
+
+<section>
+    <h2>Photography Small</h2>
+    <div id="psPhotographySmall" class="photosmith"></div>
+</section>
+<!--
+<section id="Design">
+    <h2>Design Portfolio</h2>
+    <div id="psDesignPortfolio" class="photosmith"></div>
+</section>
+-->
+
+
+
+
+
+
+
+<footer>
+    <small>Copyright: Erik Phipps 2011</small>
+</footer>
+</div><!--end #container-->
+
+
+
+
+
+
+<script id="photosmithTemplate" type="text/x-jquery-tmpl">
+<div class="photosmith-container" style="width:${this.photoWidth}">
+    <div id="photosmith-debug">
+        <p>
+            <span class="key">hideHoverClass:</span> <span class="value">${this.hideHoverClass}</span><br />
+            <span class="key">photo width:</span> <span class="value">${this.photoHeight}</span><br />
+            <span class="key">photo height:</span> <span class="value">${this.photoWidth}</span><br />
+            <span class="key">photo src:</span> <span class="value">${src}</span><br />
+            <span class="key">length:</span> <span class="value">${this.dataSet.length}</span><br />
+            <span class="key">current photo index:</span> <span class="value">${this.current}</span>
+        </p>
+    </div>
+    <div class="info clearfix">
+        <div class="set">${set}</div>
+        <div class="number"><span class="number-current">${this.current}</span> of <span class="number-total">${this.dataSet.length}</span></div>
+    </div>
+    <div class="photo" style="height:${this.photoHeight}">
+        <div class="nextprev prev disabled ${this.hideHoverClass}"></div>
+        <div class="nextprev next ${this.hideHoverClass}"></div>
+        <img class="picture" src="${src}" />
+    </div>
+    <p class="caption">${caption}</p>
+</div>
+</script>
+
+
+
+
+<script type="text/javascript" src="javascripts/library/LABjs/LAB.min.js"></script>
+<script type="text/javascript">
+   $LAB
+   .script("https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js").wait()
+   .script("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js").wait()
+   .script("http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js")
+   .script("javascripts/jquery.photosmith.js").wait()
+   .script("javascripts/javascript.js");
+</script>
+
+
+<!--[if IE 6]>
+    <script type="text/javascript">
+        $LAB.script("media/library/DD_belatedPNG.js");
+    </script>
+    <script>
+      DD_belatedPNG.fix('#container');
+    </script>
+<![endif]-->
+
+</body>
+</html>
